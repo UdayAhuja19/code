@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        width: 100vw;
+        position: relative;
+      }
+      nav {
+        position: absolute;
+        z-index: 1;
+        color: white;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        font-size: 24px;
+        position: fixed;
+        width: 100vw;
+        padding: 20px 30px;
+      }
+      .first {
+        display: flex;
+        gap: 20px;
+      }
+      .second {
+        display: flex;
+        gap: 20px;
+      }
+      .input {
+        display: flex;
+      }
+      .inputIn {
+        height: 40px;
+        width: 200px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        padding: 10px;
+        border-right: none;
+        border-color: black;
+      }
+      .btn {
+        height: 40px;
+        padding: 10px;
+        border-left: none;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-color: black;
+      }
+      section {
+        height: 95vh;
+        width: 100%;
+        background-image: linear-gradient(to top, #000, transparent),
+          url(wallpaperflare.com_wallpaper.jpg);
+        background-size: cover;
+        position: relative;
+      }
+      .welcome {
+        position: absolute;
+        font-size: 48px;
+        color: white;
+        font-weight: 900;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .dsa {
+        height: 200vh;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="first">
+        <p>Products</p>
+        <p>About Us</p>
+        <p>Contact Us</p>
+      </div>
+      <div class="second">
+        <div class="input">
+          <input type="text" placeholder="Input" class="inputIn" />
+          <button class="btn">Search</button>
+        </div>
+        <p>Linked In</p>
+        <p>Instagram</p>
+      </div>
+    </nav>
+    <section><p class="welcome">Welcome</p></section>
+    <section class="dsa"></section>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .loading {
+        height: 50px;
+        width: 50px;
+        border: solid 5px #cecece;
+        border-radius: 100px;
+        border-bottom-color: blue;
+        border-left-color: blue;
+        border-top-color: blue;
+        animation: spin 1s ease-in-out infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        80% {
+          transform: rotate(360deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading"></div>
+  </body>
+</html>

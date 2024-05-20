@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.btn {
+  height: 50px;
+  width: 200px;
+  background-color: #fff;
+  border: 2px solid #51c576;
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+@keyframes italica {
+  0% {
+    border-radius: 5px;
+    scale: 1;
+  }
+  50% {
+    border-radius: 15px;
+    font-style: normal;
+    scale: 1.1;
+  }
+  100% {
+    font-style: italic;
+    border-radius: 15px;
+    scale: 1.1;
+  }
+}
+
+.btn:hover {
+  animation: italica 0.5s ease-in-out forwards;
+  cursor: pointer;
+  background-color: #51c576;
+  color: #fff;
+}
+
+.btn2 {
+  height: 50px;
+  width: 400px;
+  background-color: #fff;
+  border: 2px solid #51c576;
+  color: #51c576;
+  transition: ease-in-out 0.5s;
+  border-style: dotted;
+  border-radius: 5px;
+}
+
+.child {
+  transition: ease-in-out 0.5s;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.btn2:hover {
+  animation: italica 0.5s ease-in-out forwards;
+  cursor: pointer;
+  /* background-color: #51c576; */
+}
+
+.btn2:hover > .child {
+  transform: translate(10px, 0);
+  /* color: #fff;*/
+}

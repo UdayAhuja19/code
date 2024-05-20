@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        background-color: #000;
+      }
+      div {
+        width: 960px;
+        margin: auto;
+        margin-top: 100px;
+      }
+      .h1 {
+        font-size: 40px;
+        font-weight: 500;
+        color: #fff;
+        border-right: 2px #fff solid;
+        animation: blinking 0.4s infinite alternate,
+          typing 6s steps(40) infinite;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      @keyframes blinking {
+        50% {
+          border-color: transparent;
+        }
+      }
+      @keyframes typing {
+        0% {
+          width: 0;
+        }
+        40% {
+          width: 100%;
+        }
+        50% {
+          width: 100%;
+        }
+        90% {
+          width: 0;
+        }
+        100% {
+          width: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 class="h1">This is Stock cotent, need to come up with a new one.</h1>
+    </div>
+  </body>
+</html>

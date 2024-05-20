@@ -1,0 +1,295 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 4px solid #000;
+}
+.nav-link-bar {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  /* width: 1000px; */
+}
+
+.nav-link-bar li {
+  list-style: none;
+  font-size: 24px;
+}
+
+.know-more {
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+  border-radius: 20px;
+  transition: ease-in-out 0.5s;
+}
+
+.know-more:hover {
+  background-color: #fff;
+  color: #000;
+  border-radius: 100px;
+}
+
+.link {
+  border-bottom: 3px #fff solid;
+}
+
+.nav-link-bar li:hover {
+  border-color: #000;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 48px;
+}
+
+.blinking-border {
+  width: 1019px;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.blinking-text {
+  font-size: 48px;
+  border-right: 2px solid #000;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blinking 0.4s infinite alternate, typing 8s steps(86) infinite;
+}
+
+@keyframes blinking {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 100%;
+  }
+  50% {
+    width: 100%;
+  }
+  90% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+.text-1 {
+  width: 1175px;
+  font-size: 24px;
+  margin: auto;
+  margin-top: 75px;
+}
+
+.rehan-1 {
+  margin-top: 200px;
+  background-color: #52c777;
+  padding: 100px;
+}
+
+.h1-2 {
+  font-size: 48px;
+  color: #fff;
+}
+.flex-links-2 {
+  display: flex;
+  gap: 20px;
+}
+
+.flex-links-2 p {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #53d67c;
+  margin-top: 20px;
+  border-radius: 100px;
+  /* border: 2px solid #000; */
+  color: #fff;
+}
+
+.flex-images-2 {
+  display: flex;
+  margin-top: 100px;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.img-2 {
+  height: 400px;
+  transition: ease-in-out;
+}
+
+/* .img-2:hover {
+  animation: hover-ani 0.5s forwards;
+} */
+
+#img1,
+#img2 {
+  animation: parallex-left linear;
+  animation-timeline: view();
+}
+
+#img3,
+#img4 {
+  animation: parallex-right 2s linear;
+  animation-timeline: view();
+}
+
+#img3:hover,
+#img4:hover {
+  animation: hover-ani 0.5s forwards;
+}
+
+#img1:hover,
+#img2:hover {
+  animation: hover-ani 0.5s forwards;
+}
+@keyframes parallex-left {
+  0% {
+    transform: translate(-50vw, 0);
+    opacity: 0;
+  }
+  30% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes parallex-right {
+  0% {
+    transform: translate(50vw, 0);
+    opacity: 0;
+  }
+  30% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes hover-ani {
+  0% {
+    transform: translate(0, 0);
+    scale: 1;
+  }
+  50% {
+    transform: translate(0, -40px);
+    scale: 1.1;
+  }
+  100% {
+    transform: translate(0, -20px);
+    scale: 1.1;
+  }
+}
+
+.uday-2 {
+  background-color: #f3f4eb;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.uday-2 h1 {
+  font-size: 48px;
+  color: #52c777;
+  align-self: flex-start;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 450px 450px 450px;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.grid-unit {
+  height: 200px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right {
+  height: 175px;
+  width: 100px;
+  background-color: #52c777;
+  border-radius: 10px;
+  transition: ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-sub {
+  scale: 1.5;
+}
+
+.right:hover {
+  border-radius: 15px;
+}
+.right:hover > .right-sub {
+  animation: spin 0.5s forwards ease-in-out;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dashed-btn {
+  background: #52c777;
+  border: 2px solid #52c777;
+  padding: 20px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 100px;
+}
+.dashed-div {
+  padding: 20px;
+  border: 2px #474747 solid;
+  border-style: dashed;
+  border-radius: 100px;
+  align-self: flex-start;
+  margin-left: 100px;
+}
+.dashed-btn:hover {
+  background-color: #f3f4eb;
+  color: #52c777;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.left p {
+  color: #474747;
+  font-weight: 100;
+}

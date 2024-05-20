@@ -1,0 +1,221 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 500;
+}
+.logo_img {
+  width: 120px;
+}
+.navlinks li a {
+  text-decoration: none;
+  color: #000;
+}
+.sin {
+  width: 140px;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  margin: 12px 0px;
+  border-radius: 30px;
+}
+
+.list li {
+  list-style: none;
+  margin: 30px;
+}
+
+.list {
+  display: flex;
+}
+li a:hover {
+  border-bottom: #2c7865 2px solid;
+  transition: ease-in-out 1s;
+}
+
+/* styling container */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url("./pexels-asad-photo-maldives-3155644.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 42px;
+  color: #fff;
+}
+#text {
+  color: #2c7865;
+}
+
+/* countries to travel */
+.countries {
+  /* background-color: #2C7865; */
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.main_text {
+  text-align: center;
+  font-size: 56px;
+}
+.para1 {
+  font-weight: 300;
+  text-align: center;
+  font-size: 18px;
+}
+.main_grid {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.country {
+  background-color: #e0caca;
+  padding-bottom: 20px;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+  border-radius: 10px;
+}
+
+.country:hover {
+  cursor: pointer;
+}
+
+.text {
+  width: 300px;
+  margin: auto;
+}
+
+.country1 h3 {
+  margin-top: 10px;
+}
+.country2 h3 {
+  margin-top: 10px;
+}
+.country3 h3 {
+  /* margin-left: 10px; */
+  margin-top: 10px;
+}
+
+.country1 img {
+  width: 350px;
+  border-radius: 10px;
+}
+.country2 img {
+  width: 350px;
+  border-radius: 10px;
+}
+.country3 img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.para {
+  width: 300px;
+  text-decoration: justify;
+  font-weight: 300;
+}
+
+/* styling offers */
+.offers {
+  margin-top: 100px;
+}
+.offer_text {
+  text-align: center;
+  font-size: 56px;
+}
+.para2 {
+  font-weight: 300;
+  text-align: center;
+  font-size: 18px;
+}
+
+.offer1 img {
+  width: 350px;
+  border-radius: 10px;
+}
+.offer2 img {
+  width: 350px;
+  border-radius: 10px;
+  height: 235px;
+}
+.offer3 img {
+  width: 350px;
+  border-radius: 10px;
+}
+.offer1 h3,
+.offer2 h3,
+.offer3 h3 {
+  margin-top: 10px;
+}
+.vmore {
+  width: 120px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  margin-top: 10px;
+  background-color: #fa7070;
+  cursor: pointer;
+}
+.spn {
+  color: #fb6d48;
+}
+.spn1 {
+  color: #ff204e;
+}
+/* applying animations */
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.country {
+  animation: fade ease-in;
+  animation-timeline: view();
+}
+
+@keyframes scale1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0px, -10px);
+  }
+  100% {
+    scale: 1.25;
+    transform: translate(0px, -10px);
+  }
+}
+
+@keyframes scale2 {
+  0% {
+    scale: 1;
+  }
+  50% {
+    transform: translate(0, -50px);
+  }
+  100% {
+    scale: 1.35;
+    transform: translate(0, -40px);
+  }
+}
+
+.hover-img:hover {
+  animation: scale1 ease-in-out 0.5s forwards;
+}
+
+.hover-img2:hover {
+  animation: scale2 ease-in-out 0.5s forwards;
+}
