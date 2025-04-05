@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navbar {
+    height: 100px;
+    border-bottom: 2px #000 solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 48px;
+}
+.links{
+    text-decoration: none;
+    font-size: 24px ;
+    border-bottom: 2px solid #fff;
+
+}
+.link-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+}
+.links:hover {
+    border-color: #000;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    background: no-repeat;
+    padding: 200px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0, 0.5)), url(60858957790e470d693bc1d2_WhatsApp_Image_2020-02-06_at_2.28-2.png) ;
+}
+.blinking-text-container {
+    width: 1018px;
+    margin: auto;
+    margin-top: 200px;
+
+}
+
+
+.blinking-text{
+    font-size: 48px;
+    animation: blinking 0.6s infinite, typing 8s steps(86) infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #000;
+    color: white;
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes typing {
+    0%{
+        width: 0%;
+    }
+    40% {
+        width: 100%;
+    }
+    50% {
+        width: 100%
+    }
+    90% {
+        width: 0%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+.hero-text {
+    font-size: 24px;
+    width: 1100px;
+    text-align: center;
+}
+
+.parallex {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #f8f9fa;
+    align-items: center;
+}
+.parallex-welcome {
+    font-size: 36px;
+}
+.parallex-elements {
+    height: 350px;
+    width: 350px;
+    background-color: #fff;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+.parallex-body {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+@keyframes para-left {
+    0% {
+        transform: translate(-50vw,0);
+        opacity: 0;
+    }
+    30% {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+@keyframes para-right {
+    0% {
+        transform: translate(50vw, 0);
+        opacity: 0;
+    }
+    30% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+#para-1,
+#para-2 {
+    animation: para-left linear;
+    animation-timeline: view();
+}
+
+#para-3,
+#para-4 {
+    animation: para-right linear;
+    animation-timeline: view();
+}
+
+.parallex-elements:hover {
+    background-color: #b69100;
+    border-color: #b69100;
+    color: #fff;
+    transition: ease-in-out 0.5s;
+}
+
+.upper-flex {
+    display: flex;
+    flex: 2fr 1fr;
+    gap: 50px;
+}
+
+.lower-flex {
+    display: flex;
+    flex: 1fr 2fr;
+    gap: 50px;
+}
+
+.flex-father {
+    padding: 100px;
+    background-color: #666666;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.flex-aboutus {
+    font-size: 48px;
+    font-weight: lighter;
+}
+.flex-text {
+    font-size: 24px;
+}
+.flex-img {
+    height: 300px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 22.5vw 22.5vw 22.5vw 22.5vw;
+    column-gap: 0;
+    row-gap: 0;
+}
+.grid-img {
+    width: 22.5vw;
+    border: 1px solid #000;
+}
+.grid-father {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.grid-div {
+    width: 22.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-div:hover {
+    background-color: #b69100;
+    color: #fff;
+    transition: ease-in-out 0.5s;
+}
+.grid-rooms {
+    font-size: 48px;
+    color: #666666;
+}
