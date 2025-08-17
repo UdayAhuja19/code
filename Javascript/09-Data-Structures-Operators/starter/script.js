@@ -27,3 +27,5 @@ const restaurant = {
     },
   },
 };
+
+console.log('hello world');
