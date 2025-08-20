@@ -27,6 +27,7 @@
   width: 100px;
   background-color: rgba(red, green, blue, alpha);
   border: none;
+  font-size: 28px;
 }
 
 .exit-btn {
